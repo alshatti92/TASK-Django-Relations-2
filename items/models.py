@@ -35,5 +35,6 @@ class Comment(models.Model):
     item = models.ForeignKey(
         Item,
         on_delete=models.CASCADE,
-        related_name="comments"
+        related_name="comments",
+        null=True,
     )
